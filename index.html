@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Hello.</title>
+  </head>
+  <body>
+    <style type="text/css">
+      body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: relative;
+        background: rgb(216,231,167); /* Old browsers */
+        background: -moz-linear-gradient(-45deg,  rgba(216,231,167,1) 0%, rgba(171,189,115,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(216,231,167,1)), color-stop(100%,rgba(171,189,115,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* IE10+ */
+        background: linear-gradient(135deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e7a7', endColorstr='#abbd73',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+      svg {
+        position: absolute;
+        top:50%;
+        width: 70%;
+        margin-left: 15%;
+      }
+      @media (orientation: landscape) {
+        svg {
+          width: 40%;
+          margin-left: 30%;
+        }
+      }
+      svg path {
+        fill:none;
+        stroke:#ffffff;
+        stroke-opacity:1;
+        stroke-dasharray: 1750;
+        stroke-dashoffset: 1750;
+        -webkit-animation: dash 1.5s linear forwards;
+        animation: dash 1.5s linear forwards;
+      }
+      @-webkit-keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+    <svg id="hello" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" preserveAspectRatio="xMinYMin meet">
+      <path d="M1,155.36207 c 38.9039506,-20.7116 67.7766806,-60.9887 84.1823006,-106.1115 1.43478,-3.9462 9.472758,-38.7432 2.10484,-42.5679 -21.56519,-11.1945 -44.13592,104.4709 -49.99124,122.7684 -0.91264,2.852 -12.43406,35.8892 -11.22389,37.0157 4.7613,4.4319 44.42527,-70.4198 63.99839,-57.3743 10.933328,7.2871 -20.49215,46.4931 -8.13947,57.9912 6.61644,6.1587 67.684108,-60.6457 47.840218,-70.9466 -17.03852,-8.8447 -32.64774,62.5002 -3.59169,66.628 41.00652,5.8257 60.26228,-70.9346 61.85239,-104.8775 0.28822,-6.1526 4.48524,-36.4205 -4.98044,-41.3341 -13.96376,-7.2486 -47.01794,126.1746 -10.90925,142.5101 39.27623,17.7685 76.73451,-125.2682 61.69397,-136.3408 -28.96255,-21.3218 -50.60616,113.5388 -18.22253,133.2562 21.31373,12.9773 70.38058,-42.6641 57.64478,-62.3096 -11.97305,-18.469 -56.69067,18.8895 -40.2278,41.3341 28.92506,39.4349 70.11131,-22.3256 44.38779,-46.2695 -12.90315,-12.0105 -48.47583,33.5818 -2.17234,20.9755 5.74045,-1.5629 14.3904,-5.2932 19.24477,-8.0201 11.39994,-6.4038 13.46239,-9.0672 23.88496,-17.8909"/>
+    </svg>
+    <script type="text/javascript">
+    	var verticalCenter = function () {
+    		var hello = document.getElementById('hello');
+    		var height = hello.offsetHeight;
+    		hello.style.marginTop = ((-height/2)+'px');
+    	};
+    	verticalCenter();
+    	window.onresize = verticalCenter;
+    </script>
+  </body>
+</html>
