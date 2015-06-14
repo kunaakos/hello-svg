@@ -3,48 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Hello.</title>
-    <meta property="og:title" content="Hi there!" />
-    <meta property="og:url" content="http://kunaakos.github.io/hello-svg/" />
-    <meta property="og:description" content="Just a simple SVG handwriting animation demo." />
-    <meta property="og:image" content="http://kunaakos.github.io/hello-svg/fb_og.png" />
+    <title>Stuff.</title>
   </head>
   <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style type="text/css">
       body, html {
         width: 100%;
         height: 100%;
         margin: 0;
         position: relative;
-        background: rgb(216,231,167); /* Old browsers */
-        background: -moz-linear-gradient(-45deg,  rgba(216,231,167,1) 0%, rgba(171,189,115,1) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(216,231,167,1)), color-stop(100%,rgba(171,189,115,1))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(-45deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* IE10+ */
-        background: linear-gradient(135deg,  rgba(216,231,167,1) 0%,rgba(171,189,115,1) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e7a7', endColorstr='#abbd73',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
-      svg {
+      #reload {
         position: absolute;
-        top:50%;
-        width: 70%;
-        margin-left: 15%;
+        left: 2%;
+        top:  2%;
+        width: 10%;
       }
-      @media (orientation: landscape) {
-        svg {
-          width: 40%;
-          margin-left: 30%;
+      nav ul {
+        padding: 0;
+      }
+      nav ul li {
+        list-style-type: none;
+      }
+      nav {
+        position: absolute;
+        width: 40%;
+        margin-left: 30%;
+        top: 50%;
+      }
+      @media (orientation: portrait) {
+        nav {
+          width: 74%;
+          margin-left: 13%;
         }
       }
-      svg path {
-        fill:none;
-        stroke:#ffffff;
-        stroke-opacity:1;
-        stroke-dasharray: 1750;
-        stroke-dashoffset: 1750;
-        -webkit-animation: dash 1.5s linear forwards;
-        animation: dash 1.5s linear forwards;
+      path {
+        fill:none;stroke:#000000;;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;
       }
       @-webkit-keyframes dash {
         to {
@@ -57,17 +52,236 @@
         }
       }
     </style>
-    <svg id="hello" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" preserveAspectRatio="xMinYMin meet">
-      <path d="M1,155.36207 c 38.9039506,-20.7116 67.7766806,-60.9887 84.1823006,-106.1115 1.43478,-3.9462 9.472758,-38.7432 2.10484,-42.5679 -21.56519,-11.1945 -44.13592,104.4709 -49.99124,122.7684 -0.91264,2.852 -12.43406,35.8892 -11.22389,37.0157 4.7613,4.4319 44.42527,-70.4198 63.99839,-57.3743 10.933328,7.2871 -20.49215,46.4931 -8.13947,57.9912 6.61644,6.1587 67.684108,-60.6457 47.840218,-70.9466 -17.03852,-8.8447 -32.64774,62.5002 -3.59169,66.628 41.00652,5.8257 60.26228,-70.9346 61.85239,-104.8775 0.28822,-6.1526 4.48524,-36.4205 -4.98044,-41.3341 -13.96376,-7.2486 -47.01794,126.1746 -10.90925,142.5101 39.27623,17.7685 76.73451,-125.2682 61.69397,-136.3408 -28.96255,-21.3218 -50.60616,113.5388 -18.22253,133.2562 21.31373,12.9773 70.38058,-42.6641 57.64478,-62.3096 -11.97305,-18.469 -56.69067,18.8895 -40.2278,41.3341 28.92506,39.4349 70.11131,-22.3256 44.38779,-46.2695 -12.90315,-12.0105 -48.47583,33.5818 -2.17234,20.9755 5.74045,-1.5629 14.3904,-5.2932 19.24477,-8.0201 11.39994,-6.4038 13.46239,-9.0672 23.88496,-17.8909"/>
-    </svg>
+    
+
+    <nav id="svgmenu">
+      <ul>
+        <li>
+          <a href="">
+            <svg id="this" xmlns="http://www.w3.org/2000/svg" viewBox="-55 30 450 140" preserveAspectRatio="xMinYMin meet">
+              <path
+                 d="M 82.142857,69.505039 C 84.362584,82.7682 82.601538,138.96757 80.714286,132.36218"
+                 id="path3019"
+              />
+              <path
+                 d="m 55,78.076467 c 26.069784,-8.816492 54.80749,-11.3644 80.71429,-20"
+                 id="path3021"
+              />
+              <path
+                 d="m 119.28571,85.93361 c 2.20032,8.427191 -9.69428,48.21571 -4.28571,29.28571"
+                 id="path3023"
+              />
+              <path
+                 d="m 116.42857,103.79075 c 8.11733,0.64912 20.67988,-2.29776 25.71429,-2.85714"
+                 id="path3025"
+              />
+              <path
+                 d="m 142.14286,84.505039 c -1.90582,12.715108 -4.06579,26.374071 0,38.571431"
+                 id="path3027"
+              />
+              <path
+                 d="m 166.42857,82.362182 c -3.06744,8.31017 2.66943,45.656988 5.71429,34.999998"
+                 id="path3029"
+              />
+              <path
+                 d="m 200,75.93361 c -34.67848,19.906857 68.2577,24.18558 2.14286,40.71429"
+                 id="path3031"
+              />
+              <path
+                 d="M 54.285714,153.07647 C 86.581253,142.154 119.8307,135.66915 153.57143,130.93361 c 27.37901,-3.84267 12.32912,-2.28893 39.28571,-4.28571 24.03385,-1.78029 48.08751,-2.42594 72.14286,-3.57143 47.43833,-2.25897 -70.92888,1.49541 -88.57143,5.71428 -27.44614,6.56321 -54.59268,14.95833 -80.714284,25.71429 -8.963619,3.6909 -18.004949,8.04364 -26.428572,12.85714 -1.205401,0.6888 -4.94086,2.3711 -3.571428,2.14286 36.010964,-6.00183 72.563524,-20.9105 107.857144,-30.71429"
+                 id="path3117" class="highlight"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg id="that" xmlns="http://www.w3.org/2000/svg" viewBox="-115 0 450 150" preserveAspectRatio="xMinYMin meet">
+              <path
+                 d="m 55,48.790753 c -0.832949,13.742142 6.774951,69.713307 2.857143,62.857147"
+                 id="path3119"
+              />
+              <path
+                 d="M 27.857143,62.362182 C 32.791151,60.12228 75.68518,48.076467 95,48.076467"
+                 id="path3121"
+              />
+              <path
+                 d="M 84.285714,79.505039 C 84.47697,58.0294 86.004441,101.91585 85.714286,103.07647"
+                 id="path3139"
+              />
+              <path
+                 d="m 83.571429,90.93361 c 9.320304,-4.907961 19.720991,-5 30.000001,-5"
+                 id="path3141"
+              />
+              <path
+                 d="m 111.42857,66.647896 c -3.92081,11.838612 -4.22945,26.22065 -2.85714,38.571424"
+                 id="path3143"
+              />
+              <path
+                 d="m 122.85714,100.21932 c 8.99967,-56.050105 14.49782,4.25243 15,6.42858"
+                 id="path3145" 
+              />
+              <path
+                 d="m 124.28571,95.93361 c 7.42226,-0.783373 12.30231,-5.714286 19.28572,-5.714286"
+                 id="path3147"
+              />
+              <path
+                 d="m 154.28571,73.076467 c 1.88076,7.963221 2.83064,16.137013 3.57143,24.285715"
+                 id="path3149"
+              />
+              <path
+                 d="m 140,71.647896 c 9.06733,-6.891132 21.92735,-11.242612 33.57143,-13.571429"
+                 id="path3153"
+              />
+              <path
+                 d="M 142.85714,24.505039 C 113.9661,21.661447 -22.886992,12.569041 -20,61.647896 -15.961902,130.29557 166.05675,136.65377 210.71429,118.79075 251.25157,102.57584 211.22344,16.570111 135,34.505039"
+                 id="path3165" class="highlight"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg id="cats" xmlns="http://www.w3.org/2000/svg" viewBox="-10 0 450 150" preserveAspectRatio="xMinYMin meet">
+              <path
+                 d="m 67.142857,48.076467 c -48.637086,-6.033842 1.513537,13.531586 4.285715,20 4.123574,9.621675 -21.290039,15.092355 -30.000001,9.285715"
+                 id="path3188"
+              />
+              <path
+                 d="M 93.571429,57.362182 C 87.966158,54.271929 79.553064,54.461158 75.714286,60.219324 66.800891,73.589417 92.846023,90.593147 102.14286,76.647896 110.56843,64.009535 87.678704,45.531593 79.285714,60.219324"
+                 id="path3190"
+              />
+              <path
+                 d="m 117.85714,83.790753 c 1.15265,-6.791957 -2.66062,-22.339376 2.85715,-27.857143 2.0305,-2.030503 1.43001,27.139962 7.14285,15.714286 15.5256,-31.051197 11.32442,1.778318 14.28572,12.142857"
+                 id="path3192"
+              />
+              <path
+                 d="m 157.14286,55.219324 c -0.57949,6.797765 1.42857,13.27321 1.42857,20 0,30.955316 -5.23476,-14.290718 -1.42857,-20 1.22308,-1.834629 21.84658,1.144031 25.71428,0.714286"
+                 id="path3244"
+              />
+              <path
+                 d="m 161.42857,72.362182 c -0.42652,-3.448514 8.57288,-5.856999 17.14286,-5"
+                 id="path3246"
+              />
+              <path
+                 d="m 162.85714,86.647896 c 7.2003,-4.68161 15.66106,-5.895556 23.57143,-9.285714"
+                 id="path3248"
+              />
+              <path
+                 d="M 256.42857,63.790753 C 221.54224,45.327973 223.95987,131.42238 260,77.362182"
+                 id="path3252"
+              />
+              <path
+                 d="m 280,90.219324 c -1.02359,-6.85212 0.72109,-13.729254 3.57143,-20 13.4102,-29.502443 9.69386,21.020424 7.85714,22.857143 -0.72659,0.72659 -7.28912,-9.337306 -7.85714,-10 -2.10755,-2.458811 -11.09559,-5.714285 -7.85714,-5.714285 6.63165,0 12.74192,-2.039169 19.28571,-2.857143"
+                 id="path3254"
+              />
+              <path
+                 d="m 307.14286,65.219324 c -4.38462,-0.997899 1.57183,23.716717 2.14285,27.142858"
+                 id="path3256"
+              />
+              <path
+                 d="m 297.14286,67.362182 c -12.98221,-9.454527 12.56115,-8.459177 20,-9.285715"
+                 id="path3258"
+              />
+              <path
+                 d="m 333.57143,58.790753 c -32.94117,17.252792 52.9296,24.012799 -11.42857,35.714286"
+                 id="path3260"
+              />
+              <path
+                 d="m 385.71429,60.93361 c 12.08643,4.410335 19.70723,16.56614 30,24.285714"
+                 id="path3262" class="highlight"
+              />
+              <path
+                 d="m 408.57143,54.505039 c -11.21741,-2.154791 -12.25405,36.926107 -15.71429,45"
+                 id="path3264" class="highlight"
+              />
+              <path
+                 d="M 386.42857,82.362182 C 374.15134,80.577893 413.66909,72.218286 420,69.505039"
+                 id="path3266" class="highlight"
+              />
+              <path
+                 d="m 398.57143,51.647896 c 3.14974,15.347302 6.27615,36.721034 13.57143,47.142857"
+                 id="path3268" class="highlight"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <script type="text/javascript">
-    	var verticalCenter = function () {
-    		var hello = document.getElementById('hello');
-    		var height = hello.offsetHeight;
-    		hello.style.marginTop = ((-height/2)+'px');
-    	};
-    	verticalCenter();
-    	window.onresize = verticalCenter;
+      
+      // centers the menu vertically
+      var verticalCenter = function () {
+        var svgmenu = document.getElementById('svgmenu');
+        var height = svgmenu.offsetHeight;
+        svgmenu.style.marginTop = ((-height/2)+'px');
+      };
+      // on init:
+      verticalCenter();
+      // on every resize:
+      window.onresize = verticalCenter;
+
+      // set dasharray and dashoffset to the length of the path, so it won't be visible
+      var pathHide = function(path) {
+        var len = path.getAttribute("data-len");
+        path.style.cssText = "stroke-dasharray:" + len + "px; stroke-dashoffset:" + len + "px";
+      }
+
+      // same as pathide, but triggers an animation that sets dashoffset to 0, thus making the path visible
+      // can't be done with css classes, because the duration of the animation depends on the length of the path
+      var pathShow = function(path) {
+        var len = path.getAttribute("data-len");
+        var time = path.getAttribute("data-time");
+        path.style.cssText = "stroke-dasharray:" + len + "px; stroke-dashoffset:" + len + "px; -webkit-animation: dash " + time +"s linear forwards; animation: dash " + time +"s linear forwards;";
+      }
+
+      // recursively draws or erases (hides) a set of paths
+      var pathsToggle = function(paths, index, drawOrErase) {
+        if (index < paths.length) {
+          var path = paths.get(index);
+          if (drawOrErase) {
+            pathShow(path);
+          } else{
+            pathHide(path);
+          };
+          var time = path.getAttribute("data-time");
+          setTimeout(function() {
+            pathsToggle(paths,index+1, drawOrErase);
+          }, time*1000);
+        };
+      }
+
+      // stores path length, calculates delays
+      // callback is there for hiding paths on init, or other effects
+      var pathsInit = function(paths, speed, callback) {
+        jQuery.each(paths, function(index, path) {
+          var len = path.getTotalLength();
+          var time = (len / speed);
+          path.setAttribute("data-len", len);
+          path.setAttribute("data-time", time);
+          callback(path);
+        });
+      }
+
+      // all the paths that will be shown and animated after load
+      var paths = $('path').not('.highlight');
+      pathsInit(paths, 1000, pathHide);
+      pathsToggle(paths, 0, true); // start drawing
+
+      // all the paths that will be hidden on load
+      var highlightPaths = $('.highlight');
+      pathsInit(highlightPaths, 1000, pathHide);
+
+      // mouse events
+      $('a').hover( function () {
+        //handlerIn, draw paths
+        pathsToggle($(this).find('.highlight'), 0, true);
+      }, function () {
+        //handlerOut, erase paths
+        pathsToggle($(this).find('.highlight'), 0, false);
+      });
+
     </script>
   </body>
 </html>
